@@ -131,6 +131,17 @@ for ($i=0; ($i<count($example_persons_array)); $i++) {
      }; 
 
 
+     if  ($getPartsFromFullname['gender'] > 0){
+        $getGenderFromName = '1 - мужской пол';
+     }
+     else if ($getPartsFromFullname['gender'] < 0){
+        $getGenderFromName = '-1 - женский пол';
+     }
+     else if ($getPartsFromFullname['gender'] = 0){
+        $getGenderFromName = '0 - неопределенный пол';
+     };
+
+     echo $getGenderFromName ;
     
     };
 
